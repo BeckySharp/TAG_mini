@@ -20,3 +20,9 @@ class GraphletMaker () {
   }
 
 }
+
+object GraphletMaker {
+  val graphletMaker = new GraphletMaker()
+  val text = "This is a sentence."
+  val graphlets: Seq[Schema] = graphletMaker.textToGraphlets(text)
+}
